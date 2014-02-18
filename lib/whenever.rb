@@ -16,7 +16,7 @@ module Whenever
   end
 
   def self.path
-    Dir.pwd
+    `pwd -L`.chomp
   end
 
   def self.bin_rails?
